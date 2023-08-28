@@ -18,35 +18,38 @@
 				name="bill_Amount"
 				id="bill_Amount"
 				placeholder="R$"
+				data_bill_Amount
 			/>
 
 			<label for="service_quality">Qualidade do serviço</label>
 
-			<select name="service_quality" id="service_quality">
-				<option value="0.1">Excelent - 10%</option>
+			<select name="service_quality" id="service_quality" data_service_quality>
+				<option value="0.1">Excelente - 10%</option>
 				<option value="0.08">Ótimo - 8%</option>
 				<option value="0.05">Bom - 5%</option>
 				<option value="0.02">Ruim - 2%</option>
 			</select>
 
-			<button id="calculate_btn">Calcular Gorjeta</button>
+			<button id="calculate_btn" data_calculate_btn>Calcular Gorjeta</button>
 
 			<div class="result">
 				<label for="tip_Amount">Valor da Gorjeta:</label>
 
 				<input
-					type="number"
+					type="text"
 					name="tip_Amount"
 					id="tip_Amount"
+					data_tip_Amount
 					disabled
 				/>
 
 				<label for="total_Amount">Valor total:</label>
 
 				<input
-					type="number"
+					type="text"
 					name="total_Amount"
 					id="total_Amount"
+					data_total_Amount
 					disabled
 				/>
 			</div>
